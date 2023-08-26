@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  senja-api:
+    container_name: senja-api
+    image: senja-api:0.0.1
+    ports:
+      - 8080:8080
+    environment:
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: Akunpostgre1@
+      DATABASE_URL: jdbc:postgresql://senjaapi:5432/senjaapi
+#  config awal
+  senjaapi:
+    container_name: "senjaapi"
+    image: postgres:15.1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: Akunpostgre1@
+      POSTGRES_DB: senjaapi

@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/quotes
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id" : "0001A",
+    "text" : "Usaha jujur lebih mujur",
+    "author" : "beranju"
+}
